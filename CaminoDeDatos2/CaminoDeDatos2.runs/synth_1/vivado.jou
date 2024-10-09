@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Fri Sep 27 12:33:59 2024
+# Process ID: 44320
+# Current directory: C:/Users/alexi/OneDrive/Documentos/7 Semestre/Arquitectura de computadoras/CaminoDeDatos2/CaminoDeDatos2.runs/synth_1
+# Command line: vivado.exe -log Union_Ram_Decodificador_Suma.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Union_Ram_Decodificador_Suma.tcl
+# Log file: C:/Users/alexi/OneDrive/Documentos/7 Semestre/Arquitectura de computadoras/CaminoDeDatos2/CaminoDeDatos2.runs/synth_1/Union_Ram_Decodificador_Suma.vds
+# Journal file: C:/Users/alexi/OneDrive/Documentos/7 Semestre/Arquitectura de computadoras/CaminoDeDatos2/CaminoDeDatos2.runs/synth_1\vivado.jou
+# Running On        :AlexisPaletaHP
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :AMD Ryzen 7 5700U with Radeon Graphics         
+# CPU Frequency     :1797 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :16456 MB
+# Swap memory       :8066 MB
+# Total Virtual     :24522 MB
+# Available Virtual :4447 MB
+#-----------------------------------------------------------
+source Union_Ram_Decodificador_Suma.tcl -notrace

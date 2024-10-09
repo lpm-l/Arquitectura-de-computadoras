@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "Union_Ram_Decodificador_Suma_behav" "xil_defaultlib.Union_Ram_Decodificador_Suma" -log "elaborate.log" 

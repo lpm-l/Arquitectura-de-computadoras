@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../camDatos1Corregido.srcs/sources_1/new/MemoriaDeInstrucciones.vhd" \
+"../../../../camDatos1Corregido.srcs/sources_1/new/PC.vhd" \
+"../../../../camDatos1Corregido.srcs/sources_1/new/sumador.vhd" \
+"../../../../camDatos1Corregido.srcs/sources_1/new/Union.vhd" \
+
+# Do not sort compile order
+nosort

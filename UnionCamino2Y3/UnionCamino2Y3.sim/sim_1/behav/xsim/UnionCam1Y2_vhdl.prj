@@ -1,0 +1,14 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../UnionCamino2Y3.srcs/sources_1/new/Alu.vhd" \
+"../../../../../CaminoDeDatos2/CaminoDeDatos2.srcs/sources_1/new/DecodificadorInstrucciones.vhd" \
+"../../../../../camDatos1Corregido/camDatos1Corregido.srcs/sources_1/new/MemoriaDeInstrucciones.vhd" \
+"../../../../../camDatos1Corregido/camDatos1Corregido.srcs/sources_1/new/PC.vhd" \
+"../../../../../camDatos1Corregido/camDatos1Corregido.srcs/sources_1/new/Union.vhd" \
+"../../../../../CaminoDeDatos2/CaminoDeDatos2.srcs/sources_1/new/Union_Ram_Decodificador_Suma.vhd" \
+"../../../../../CaminoDeDatos2/CaminoDeDatos2.srcs/sources_1/new/ram.vhd" \
+"../../../../../camDatos1Corregido/camDatos1Corregido.srcs/sources_1/new/sumador.vhd" \
+"../../../../UnionCamino2Y3.srcs/sources_1/new/UnionCam1Y2.vhd" \
+
+# Do not sort compile order
+nosort

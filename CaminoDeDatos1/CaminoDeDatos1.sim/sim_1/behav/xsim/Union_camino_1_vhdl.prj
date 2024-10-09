@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../CaminoDeDatos1.srcs/sources_1/new/ContadorPrograma.vhd" \
+"../../../../CaminoDeDatos1.srcs/sources_1/new/MemoriaDeInstrucciones.vhd" \
+"../../../../CaminoDeDatos1.srcs/sources_1/new/PC.vhd" \
+"../../../../CaminoDeDatos1.srcs/sources_1/new/Union_camino_1.vhd" \
+
+# Do not sort compile order
+nosort

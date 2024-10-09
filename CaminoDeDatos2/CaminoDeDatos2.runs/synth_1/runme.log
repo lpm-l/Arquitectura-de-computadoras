@@ -1,0 +1,233 @@
+
+*** Running vivado
+    with args -log Union_Ram_Decodificador_Suma.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Union_Ram_Decodificador_Suma.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Fri Sep 27 12:33:59 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source Union_Ram_Decodificador_Suma.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 512.027 ; gain = 197.945
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/alexi/OneDrive/Documentos/7 Semestre/Arquitectura de computadoras/CaminoDeDatos2/CaminoDeDatos2.srcs/utils_1/imports/synth_1/ram.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/alexi/OneDrive/Documentos/7 Semestre/Arquitectura de computadoras/CaminoDeDatos2/CaminoDeDatos2.srcs/utils_1/imports/synth_1/ram.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Union_Ram_Decodificador_Suma -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 35208
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 973.863 ; gain = 450.734
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Union_Ram_Decodificador_Suma' [C:/Users/alexi/OneDrive/Documentos/7 Semestre/Arquitectura de computadoras/CaminoDeDatos2/CaminoDeDatos2.srcs/sources_1/new/Union_Ram_Decodificador_Suma.vhd:39]
+INFO: [Synth 8-3491] module 'DecodificadorInstrucciones' declared at 'C:/Users/alexi/OneDrive/Documentos/7 Semestre/Arquitectura de computadoras/CaminoDeDatos2/CaminoDeDatos2.srcs/sources_1/new/DecodificadorInstrucciones.vhd:36' bound to instance 'Decodificador' of component 'DecodificadorInstrucciones' [C:/Users/alexi/OneDrive/Documentos/7 Semestre/Arquitectura de computadoras/CaminoDeDatos2/CaminoDeDatos2.srcs/sources_1/new/Union_Ram_Decodificador_Suma.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'DecodificadorInstrucciones' [C:/Users/alexi/OneDrive/Documentos/7 Semestre/Arquitectura de computadoras/CaminoDeDatos2/CaminoDeDatos2.srcs/sources_1/new/DecodificadorInstrucciones.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'DecodificadorInstrucciones' (0#1) [C:/Users/alexi/OneDrive/Documentos/7 Semestre/Arquitectura de computadoras/CaminoDeDatos2/CaminoDeDatos2.srcs/sources_1/new/DecodificadorInstrucciones.vhd:46]
+INFO: [Synth 8-3491] module 'ram' declared at 'C:/Users/alexi/OneDrive/Documentos/7 Semestre/Arquitectura de computadoras/CaminoDeDatos2/CaminoDeDatos2.srcs/sources_1/new/ram.vhd:36' bound to instance 'rm' of component 'ram' [C:/Users/alexi/OneDrive/Documentos/7 Semestre/Arquitectura de computadoras/CaminoDeDatos2/CaminoDeDatos2.srcs/sources_1/new/Union_Ram_Decodificador_Suma.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'ram' [C:/Users/alexi/OneDrive/Documentos/7 Semestre/Arquitectura de computadoras/CaminoDeDatos2/CaminoDeDatos2.srcs/sources_1/new/ram.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'ram' (0#1) [C:/Users/alexi/OneDrive/Documentos/7 Semestre/Arquitectura de computadoras/CaminoDeDatos2/CaminoDeDatos2.srcs/sources_1/new/ram.vhd:46]
+INFO: [Synth 8-3491] module 'sumaPrueba' declared at 'C:/Users/alexi/OneDrive/Documentos/7 Semestre/Arquitectura de computadoras/CaminoDeDatos2/CaminoDeDatos2.srcs/sources_1/new/sumaPrueba.vhd:36' bound to instance 'sumaP' of component 'sumaPrueba' [C:/Users/alexi/OneDrive/Documentos/7 Semestre/Arquitectura de computadoras/CaminoDeDatos2/CaminoDeDatos2.srcs/sources_1/new/Union_Ram_Decodificador_Suma.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'sumaPrueba' [C:/Users/alexi/OneDrive/Documentos/7 Semestre/Arquitectura de computadoras/CaminoDeDatos2/CaminoDeDatos2.srcs/sources_1/new/sumaPrueba.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'sumaPrueba' (0#1) [C:/Users/alexi/OneDrive/Documentos/7 Semestre/Arquitectura de computadoras/CaminoDeDatos2/CaminoDeDatos2.srcs/sources_1/new/sumaPrueba.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Union_Ram_Decodificador_Suma' (0#1) [C:/Users/alexi/OneDrive/Documentos/7 Semestre/Arquitectura de computadoras/CaminoDeDatos2/CaminoDeDatos2.srcs/sources_1/new/Union_Ram_Decodificador_Suma.vhd:39]
+WARNING: [Synth 8-3848] Net reg2 in module/entity Union_Ram_Decodificador_Suma does not have driver. [C:/Users/alexi/OneDrive/Documentos/7 Semestre/Arquitectura de computadoras/CaminoDeDatos2/CaminoDeDatos2.srcs/sources_1/new/Union_Ram_Decodificador_Suma.vhd:69]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1083.070 ; gain = 559.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 1083.070 ; gain = 559.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 1083.070 ; gain = 559.941
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 1083.070 ; gain = 559.941
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---RAMs : 
+	              160 Bit	(32 X 5 bit)          RAMs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Device 21-9227] Part: xc7a100tcsg324-1 does not have CEAM library.
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-6014] Unused sequential element rm/RAM_reg was removed. 
+WARNING: [Synth 8-3330] design Union_Ram_Decodificador_Suma has an empty top module
+WARNING: [Synth 8-7129] Port clk in module Union_Ram_Decodificador_Suma is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruccion[31] in module Union_Ram_Decodificador_Suma is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruccion[30] in module Union_Ram_Decodificador_Suma is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruccion[29] in module Union_Ram_Decodificador_Suma is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruccion[28] in module Union_Ram_Decodificador_Suma is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruccion[27] in module Union_Ram_Decodificador_Suma is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruccion[26] in module Union_Ram_Decodificador_Suma is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruccion[15] in module Union_Ram_Decodificador_Suma is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruccion[14] in module Union_Ram_Decodificador_Suma is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruccion[13] in module Union_Ram_Decodificador_Suma is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruccion[12] in module Union_Ram_Decodificador_Suma is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruccion[11] in module Union_Ram_Decodificador_Suma is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruccion[10] in module Union_Ram_Decodificador_Suma is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruccion[9] in module Union_Ram_Decodificador_Suma is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruccion[8] in module Union_Ram_Decodificador_Suma is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruccion[7] in module Union_Ram_Decodificador_Suma is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruccion[6] in module Union_Ram_Decodificador_Suma is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruccion[5] in module Union_Ram_Decodificador_Suma is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruccion[4] in module Union_Ram_Decodificador_Suma is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruccion[3] in module Union_Ram_Decodificador_Suma is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruccion[2] in module Union_Ram_Decodificador_Suma is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruccion[1] in module Union_Ram_Decodificador_Suma is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruccion[0] in module Union_Ram_Decodificador_Suma is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:32 . Memory (MB): peak = 1285.066 ; gain = 761.938
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:32 . Memory (MB): peak = 1285.066 ; gain = 761.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:32 . Memory (MB): peak = 1285.066 ; gain = 761.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-5753] loadless multi-driven net instruccion[25] with 1st driver pin 'instruccion[25]' [C:/Users/alexi/OneDrive/Documentos/7 Semestre/Arquitectura de computadoras/CaminoDeDatos2/CaminoDeDatos2.srcs/sources_1/new/Union_Ram_Decodificador_Suma.vhd:34]
+WARNING: [Synth 8-5753] loadless multi-driven net instruccion[20] with 2nd driver pin 'instruccion[20]' [C:/Users/alexi/OneDrive/Documentos/7 Semestre/Arquitectura de computadoras/CaminoDeDatos2/CaminoDeDatos2.srcs/sources_1/new/Union_Ram_Decodificador_Suma.vhd:34]
+WARNING: [Synth 8-5753] loadless multi-driven net instruccion[24] with 1st driver pin 'instruccion[24]' [C:/Users/alexi/OneDrive/Documentos/7 Semestre/Arquitectura de computadoras/CaminoDeDatos2/CaminoDeDatos2.srcs/sources_1/new/Union_Ram_Decodificador_Suma.vhd:34]
+WARNING: [Synth 8-5753] loadless multi-driven net instruccion[19] with 2nd driver pin 'instruccion[19]' [C:/Users/alexi/OneDrive/Documentos/7 Semestre/Arquitectura de computadoras/CaminoDeDatos2/CaminoDeDatos2.srcs/sources_1/new/Union_Ram_Decodificador_Suma.vhd:34]
+WARNING: [Synth 8-5753] loadless multi-driven net instruccion[23] with 1st driver pin 'instruccion[23]' [C:/Users/alexi/OneDrive/Documentos/7 Semestre/Arquitectura de computadoras/CaminoDeDatos2/CaminoDeDatos2.srcs/sources_1/new/Union_Ram_Decodificador_Suma.vhd:34]
+WARNING: [Synth 8-5753] loadless multi-driven net instruccion[18] with 2nd driver pin 'instruccion[18]' [C:/Users/alexi/OneDrive/Documentos/7 Semestre/Arquitectura de computadoras/CaminoDeDatos2/CaminoDeDatos2.srcs/sources_1/new/Union_Ram_Decodificador_Suma.vhd:34]
+WARNING: [Synth 8-5753] loadless multi-driven net instruccion[22] with 1st driver pin 'instruccion[22]' [C:/Users/alexi/OneDrive/Documentos/7 Semestre/Arquitectura de computadoras/CaminoDeDatos2/CaminoDeDatos2.srcs/sources_1/new/Union_Ram_Decodificador_Suma.vhd:34]
+WARNING: [Synth 8-5753] loadless multi-driven net instruccion[17] with 2nd driver pin 'instruccion[17]' [C:/Users/alexi/OneDrive/Documentos/7 Semestre/Arquitectura de computadoras/CaminoDeDatos2/CaminoDeDatos2.srcs/sources_1/new/Union_Ram_Decodificador_Suma.vhd:34]
+WARNING: [Synth 8-5753] loadless multi-driven net instruccion[21] with 1st driver pin 'instruccion[21]' [C:/Users/alexi/OneDrive/Documentos/7 Semestre/Arquitectura de computadoras/CaminoDeDatos2/CaminoDeDatos2.srcs/sources_1/new/Union_Ram_Decodificador_Suma.vhd:34]
+WARNING: [Synth 8-5753] loadless multi-driven net instruccion[16] with 2nd driver pin 'instruccion[16]' [C:/Users/alexi/OneDrive/Documentos/7 Semestre/Arquitectura de computadoras/CaminoDeDatos2/CaminoDeDatos2.srcs/sources_1/new/Union_Ram_Decodificador_Suma.vhd:34]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:46 . Memory (MB): peak = 1285.066 ; gain = 761.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:46 . Memory (MB): peak = 1285.066 ; gain = 761.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:46 . Memory (MB): peak = 1285.066 ; gain = 761.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:46 . Memory (MB): peak = 1285.066 ; gain = 761.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:46 . Memory (MB): peak = 1285.066 ; gain = 761.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:46 . Memory (MB): peak = 1285.066 ; gain = 761.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:46 . Memory (MB): peak = 1285.066 ; gain = 761.938
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 37 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:46 . Memory (MB): peak = 1285.066 ; gain = 761.938
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:46 . Memory (MB): peak = 1285.066 ; gain = 761.938
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1285.066 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1387.812 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 1e0f68f4
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:51 . Memory (MB): peak = 1387.812 ; gain = 870.988
+INFO: [Common 17-1381] The checkpoint 'C:/Users/alexi/OneDrive/Documentos/7 Semestre/Arquitectura de computadoras/CaminoDeDatos2/CaminoDeDatos2.runs/synth_1/Union_Ram_Decodificador_Suma.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file Union_Ram_Decodificador_Suma_utilization_synth.rpt -pb Union_Ram_Decodificador_Suma_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 27 12:35:03 2024...

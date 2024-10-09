@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1728489844">
+  <File Type="ROUTE-PWR" Name="unionRefrescos_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="unionRefrescos.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="unionRefrescos_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="unionRefrescos_reports.tcl"/>
+  <File Type="OPT-RQA-PB" Name="unionRefrescos_rqa_opted.pb"/>
+  <File Type="BITSTR-MMI" Name="unionRefrescos.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="unionRefrescos_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="unionRefrescos_timing_summary_init.rpt"/>
+  <File Type="OPT-TIMING" Name="unionRefrescos_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="unionRefrescos_opt.dcp"/>
+  <File Type="OPT-DRC" Name="unionRefrescos_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="unionRefrescos.hwdef"/>
+  <File Type="PWROPT-DCP" Name="unionRefrescos_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="unionRefrescos_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="unionRefrescos_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="unionRefrescos_placed.dcp"/>
+  <File Type="PLACE-IO" Name="unionRefrescos_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="unionRefrescos_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="unionRefrescos_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="unionRefrescos_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="unionRefrescos_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="unionRefrescos_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="unionRefrescos_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="unionRefrescos.bin"/>
+  <File Type="PLACE-TIMING" Name="unionRefrescos_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="unionRefrescos_power_routed.rpx"/>
+  <File Type="PLACE-RQA-PB" Name="unionRefrescos_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="unionRefrescos_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="unionRefrescos.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="unionRefrescos_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="unionRefrescos_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="unionRefrescos_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="unionRefrescos.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="unionRefrescos_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="unionRefrescos_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="unionRefrescos_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="unionRefrescos_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="unionRefrescos_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="unionRefrescos_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="unionRefrescos_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="unionRefrescos_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="unionRefrescos_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="unionRefrescos_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-RQS-PB" Name="unionRefrescos_rqs_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="unionRefrescos_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="unionRefrescos_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="unionRefrescos_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="unionRefrescos_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="unionRefrescos_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="unionRefrescos_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="unionRefrescos_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="unionRefrescos_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="unionRefrescos_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="unionRefrescos_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="unionRefrescos_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="unionRefrescos_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="unionRefrescos_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="unionRefrescos_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="unionRefrescos_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="unionRefrescos_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="unionRefrescos.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="unionRefrescos_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="unionRefrescos_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="unionRefrescos.nky"/>
+  <File Type="BITSTR-BMM" Name="unionRefrescos_bd.bmm"/>
+  <File Type="PDI-FILE" Name="unionRefrescos.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="unionRefrescos_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="unionRefrescos_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="unionRefrescos.rcfi"/>
+  <File Type="CFI_FILE" Name="unionRefrescos.cfi"/>
+  <File Type="RNPI_FILE" Name="unionRefrescos.rnpi"/>
+  <File Type="NPI_FILE" Name="unionRefrescos.npi"/>
+  <File Type="RBD_FILE" Name="unionRefrescos.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="unionRefrescos.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="unionRefrescos.sysdef"/>
+  <File Type="BG-BGN" Name="unionRefrescos.bgn"/>
+  <File Type="BG-DRC" Name="unionRefrescos.drc"/>
+  <File Type="RDI-RDI" Name="unionRefrescos.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="unionRefrescos_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="unionRefrescos_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Refresos.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/divisorFrecuencia.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/unionRefrescos.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="unionRefrescos"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/puertos.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/puertos.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/unionRefrescos.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
