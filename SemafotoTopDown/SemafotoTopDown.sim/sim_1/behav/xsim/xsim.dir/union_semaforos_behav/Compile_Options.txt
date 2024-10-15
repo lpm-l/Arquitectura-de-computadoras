@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "union_semaforos_behav" "xil_defaultlib.union_semaforos" -log "elaborate.log" 

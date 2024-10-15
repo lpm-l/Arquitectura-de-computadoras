@@ -32,7 +32,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Union_Ram_Decodificador_Suma is
-    Port ( clk : in STD_LOGIC;
+    Port ( clk_RAM : in STD_LOGIC;
+           clk_RegALU : in STD_LOGIC;
            C: in STD_LOGIC_VECTOR (1 downto 0); --Esta entrada simula el controlador de la ALU, como todavia no esta ponemos esta entrada para decidir que operacion hacer
     instruccion : in STD_LOGIC_VECTOR (31 downto 0));
 end Union_Ram_Decodificador_Suma;
@@ -66,6 +67,12 @@ architecture Behavioral of Union_Ram_Decodificador_Suma is
               SALIDA : out  STD_LOGIC_VECTOR (4 downto 0));
     end component;
     
+    component RegistroALU
+        Port ( clk : in STD_LOGIC;
+           valor_entrada : in STD_LOGIC_VECTOR (4 downto 0);
+           valor_salida : out STD_LOGIC_VECTOR (4 downto 0));
+    end component;
+    
     signal cop: std_logic_vector (5 downto  0);
     signal reg1: std_logic_vector (4 downto 0);
     signal reg2: std_logic_vector (4 downto 0);
@@ -73,6 +80,7 @@ architecture Behavioral of Union_Ram_Decodificador_Suma is
     signal sham: std_logic_vector (4 downto 0);
     signal func: std_logic_vector (5 downto 0);
     signal resultado: std_logic_vector (4 downto 0);
+    signal valorALU: std_logic_vector (4 downto 0);
     signal val1: std_logic_vector (4 downto 0);
     signal val2: std_logic_vector (4 downto 0);
 begin
@@ -89,11 +97,11 @@ begin
              
     
     rm: ram
-    port map(clk => clk,
+    port map(clk => clk_RAM,
              addr1 => reg1,
              addr2 => reg2,
              addr3 => reg3,
-             resultadoOP => resultado,
+             resultadoOP => valorALU,
              valor1 => val1,
              valor2 => val2);
              
@@ -102,6 +110,11 @@ begin
              B => val2,
              C => C,
              SALIDA => resultado);
+             
+    reg_alu: RegistroALU
+    port map(clk => clk_RegALU,
+             valor_entrada => resultado,
+             valor_salida => valorALU);
 
     
 end Behavioral;

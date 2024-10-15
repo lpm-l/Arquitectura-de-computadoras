@@ -34,7 +34,8 @@ use IEEE.std_logic_arith.ALL;
 --use UNISIM.VComponents.all;
 
 entity Union is
-    Port ( clk : in STD_LOGIC;
+    Port ( clk_pc : in STD_LOGIC;
+           clk_MemInstrucciones : in STD_LOGIC;
            reset : in STD_LOGIC;
            instruccion : out STD_LOGIC_VECTOR (31 downto 0));
 end Union;
@@ -66,12 +67,12 @@ begin
 
     registro_instrucciones: PC 
     port map(
-             clk => clk,
+             clk => clk_pc,
              PC_in => cnt_out_reg,
              PC_out => PC_out_reg);
              
     mem_instrucciones: MemoriaDeInstrucciones
-    port map(clk => clk,
+    port map(clk => clk_MemInstrucciones,
              addr => PC_out_reg,
              instruccion => instruccion);
              
