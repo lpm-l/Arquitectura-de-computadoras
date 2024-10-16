@@ -32,7 +32,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Union_Ram_Decodificador_Suma is
-    Port ( clk_RAM : in STD_LOGIC;
+    Port ( clk_RAM_L : in STD_LOGIC;
+           clk_RAM_E : in STD_LOGIC;
            clk_RegALU : in STD_LOGIC;
            C: in STD_LOGIC_VECTOR (1 downto 0); --Esta entrada simula el controlador de la ALU, como todavia no esta ponemos esta entrada para decidir que operacion hacer
     instruccion : in STD_LOGIC_VECTOR (31 downto 0));
@@ -97,7 +98,8 @@ begin
              
     
     rm: ram
-    port map(clk => clk_RAM,
+    port map(clk_leer  => clk_RAM_L,
+             clk_escribir  => clk_RAM_E,
              addr1 => reg1,
              addr2 => reg2,
              addr3 => reg3,

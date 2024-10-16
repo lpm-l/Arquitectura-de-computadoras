@@ -34,7 +34,8 @@ use IEEE.std_logic_unsigned.ALL;
 --use UNISIM.VComponents.all;
 
 entity ram is
-    Port ( clk : in STD_LOGIC;
+    Port ( clk_leer : in STD_LOGIC;
+           clk_escribir : in STD_LOGIC;
            addr1 : in STD_LOGIC_VECTOR (4 downto 0);
            addr2 : in STD_LOGIC_VECTOR (4 downto 0);
            addr3 : in STD_LOGIC_VECTOR (4 downto 0);
@@ -82,15 +83,15 @@ architecture Behavioral of ram is
 				);
 begin
 
-    process(clk) 
+    process(clk_escribir, clk_leer) 
         
     begin
-        if rising_edge(clk) then --Modo lectura
+        if rising_edge(clk_escribir) then --Modo lectura
                valor1 <= RAM(conv_integer(addr1)); 
                valor2 <= RAM(conv_integer(addr2));         
         end if;
         
-        if falling_edge(clk) then -- Modo escritura
+        if falling_edge(clk_leer) then -- Modo escritura
             RAM(conv_integer(addr3)) <= resultadoOP;
         end if;
        

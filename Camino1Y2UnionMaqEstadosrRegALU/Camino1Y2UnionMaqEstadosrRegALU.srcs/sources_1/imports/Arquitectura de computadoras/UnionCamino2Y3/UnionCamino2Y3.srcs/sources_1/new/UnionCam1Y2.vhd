@@ -36,7 +36,8 @@ use IEEE.std_logic_arith.ALL;
 entity UnionCam1Y2 is
     Port ( clk_pc : in STD_LOGIC;
            clk_MemInstrucciones : in STD_LOGIC;
-           clk_RAM : in STD_LOGIC;
+           clk_RAM_E : in STD_LOGIC;
+           clk_RAM_L : in STD_LOGIC;
            clk_RegALU : in STD_LOGIC;
            reset : in STD_LOGIC;
            C : in STD_LOGIC_VECTOR (1 downto 0));
@@ -52,7 +53,8 @@ architecture Behavioral of UnionCam1Y2 is
     end component;
     
     component Union_Ram_Decodificador_Suma
-        Port ( clk_RAM : in STD_LOGIC;
+        Port ( clk_RAM_L : in STD_LOGIC;
+           clk_RAM_E : in STD_LOGIC;
            clk_RegALU : in STD_LOGIC;
            C: in STD_LOGIC_VECTOR (1 downto 0); --Esta entrada simula el controlador de la ALU, como todavia no esta ponemos esta entrada para decidir que operacion hacer
     instruccion : in STD_LOGIC_VECTOR (31 downto 0));
@@ -69,7 +71,8 @@ begin
                   instruccion => instruccion_interna);
                   
     camino_2: Union_Ram_Decodificador_Suma
-        Port map( clk_RAM => clk_RAM,
+        Port map( clk_RAM_L => clk_RAM_L,
+                  clk_RAM_E => clk_RAM_E,
                    clk_RegALU => clk_RegALU,
                   C => C,
                   instruccion => instruccion_interna);
