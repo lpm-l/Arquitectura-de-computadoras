@@ -36,7 +36,8 @@ entity Union_Ram_Decodificador_Suma is
            clk_RAM_E : in STD_LOGIC;
            clk_RegALU : in STD_LOGIC;
            C: in STD_LOGIC_VECTOR (1 downto 0); --Esta entrada simula el controlador de la ALU, como todavia no esta ponemos esta entrada para decidir que operacion hacer
-    instruccion : in STD_LOGIC_VECTOR (31 downto 0));
+    instruccion : in STD_LOGIC_VECTOR (31 downto 0);
+    funcion : out STD_LOGIC_VECTOR (5 downto 0));
 end Union_Ram_Decodificador_Suma;
 
 architecture Behavioral of Union_Ram_Decodificador_Suma is
@@ -52,7 +53,8 @@ architecture Behavioral of Union_Ram_Decodificador_Suma is
     end component;
     
     component ram
-        Port ( clk : in STD_LOGIC;
+        Port (clk_leer : in STD_LOGIC;
+           clk_escribir : in STD_LOGIC;
            addr1 : in STD_LOGIC_VECTOR (4 downto 0);
            addr2 : in STD_LOGIC_VECTOR (4 downto 0);
            addr3 : in STD_LOGIC_VECTOR (4 downto 0);
@@ -94,7 +96,7 @@ begin
              registro2 => reg2,
              resultado => reg3,
              shamt => sham,
-             funcion => func);
+             funcion => funcion);
              
     
     rm: ram
