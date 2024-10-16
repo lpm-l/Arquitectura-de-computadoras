@@ -9,6 +9,7 @@ vhdl xil_defaultlib  \
 "../../../../../camDatos1Corregido/camDatos1Corregido.srcs/sources_1/new/Union.vhd" \
 "../../../../Camino1Y2UnionMaqEstadosrRegALU.srcs/sources_1/imports/Arquitectura de computadoras/UnionCamino2Y3/UnionCamino2Y3.srcs/sources_1/new/UnionCam1Y2.vhd" \
 "../../../../../CaminoDeDatos2/CaminoDeDatos2.srcs/sources_1/new/Union_Ram_Decodificador_Suma.vhd" \
+"../../../../Camino1Y2UnionMaqEstadosrRegALU.srcs/sources_1/new/controlAlu.vhd" \
 "../../../../../CaminoDeDatos2/CaminoDeDatos2.srcs/sources_1/new/ram.vhd" \
 "../../../../../camDatos1Corregido/camDatos1Corregido.srcs/sources_1/new/sumador.vhd" \
 "../../../../Camino1Y2UnionMaqEstadosrRegALU.srcs/sources_1/new/UnionCaminos1Y2MaqEstados.vhd" \

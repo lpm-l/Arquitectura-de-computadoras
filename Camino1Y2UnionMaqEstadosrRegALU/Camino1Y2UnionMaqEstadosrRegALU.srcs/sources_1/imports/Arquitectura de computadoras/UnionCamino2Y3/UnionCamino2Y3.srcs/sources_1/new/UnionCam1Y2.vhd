@@ -41,7 +41,7 @@ entity UnionCam1Y2 is
            clk_RegALU : in STD_LOGIC;
            reset : in STD_LOGIC;
            funcion : out STD_LOGIC_VECTOR (5 downto 0);
-           C : in STD_LOGIC_VECTOR (1 downto 0));
+           C : in STD_LOGIC_VECTOR (2 downto 0));
 end UnionCam1Y2;
 
 architecture Behavioral of UnionCam1Y2 is
@@ -57,7 +57,7 @@ architecture Behavioral of UnionCam1Y2 is
         Port ( clk_RAM_L : in STD_LOGIC;
            clk_RAM_E : in STD_LOGIC;
            clk_RegALU : in STD_LOGIC;
-           C: in STD_LOGIC_VECTOR (1 downto 0); --Esta entrada simula el controlador de la ALU, como todavia no esta ponemos esta entrada para decidir que operacion hacer
+           C: in STD_LOGIC_VECTOR (2 downto 0); --Esta entrada simula el controlador de la ALU, como todavia no esta ponemos esta entrada para decidir que operacion hacer
     instruccion : in STD_LOGIC_VECTOR (31 downto 0);
     funcion : out STD_LOGIC_VECTOR (5 downto 0));
     end component;
@@ -75,8 +75,9 @@ begin
     camino_2: Union_Ram_Decodificador_Suma
         Port map( clk_RAM_L => clk_RAM_L,
                   clk_RAM_E => clk_RAM_E,
-                   clk_RegALU => clk_RegALU,
+                  clk_RegALU => clk_RegALU,
                   C => C,
-                  instruccion => instruccion_interna);
+                  instruccion => instruccion_interna,
+                  funcion => funcion);
 
 end Behavioral;

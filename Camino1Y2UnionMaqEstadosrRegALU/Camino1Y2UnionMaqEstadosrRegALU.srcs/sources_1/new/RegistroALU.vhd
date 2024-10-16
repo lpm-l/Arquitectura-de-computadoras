@@ -44,6 +44,7 @@ begin
     process (clk) begin
         if(rising_edge(clk)) then
             valor <= valor_entrada;
+            valor <= "00011";
         end if;
     end process;
     

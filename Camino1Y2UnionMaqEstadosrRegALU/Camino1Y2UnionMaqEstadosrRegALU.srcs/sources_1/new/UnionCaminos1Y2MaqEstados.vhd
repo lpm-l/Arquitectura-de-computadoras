@@ -52,7 +52,7 @@ component UnionCam1Y2
            clk_RegALU : in STD_LOGIC;
            reset : in STD_LOGIC;
            funcion : out STD_LOGIC_VECTOR (5 downto 0);
-           C : in STD_LOGIC_VECTOR (1 downto 0));
+           C : in STD_LOGIC_VECTOR (2 downto 0));
 end component;
 
 component MaquinaDeEstados
@@ -68,9 +68,9 @@ signal E1: STD_LOGIC;
 signal E2: STD_LOGIC;
 signal E3: STD_LOGIC;
 signal E4: STD_LOGIC;
-signal ALUop: STD_LOGIC_VECTOR(1 downto 0);
-signal funcion : STD_LOGIC_VECTOR(5 downto 0);
-signal operacion : STD_LOGIC_VECTOR(2 downto 0);
+signal ALUop: STD_LOGIC_VECTOR(1 downto 0) := "11";
+signal funcionLocal : STD_LOGIC_VECTOR(5 downto 0);
+signal operacionLocal : STD_LOGIC_VECTOR(2 downto 0);
 
 begin
 
@@ -81,8 +81,8 @@ begin
              clk_RAM_E => E4,
              clk_RegALU => E4,
               reset => reset,
-              funcion => funcion,
-              C => operacion  );
+              funcion => funcionLocal,
+              C => operacionLocal  );
 
 
     maq: MaquinaDeEstados
@@ -96,6 +96,6 @@ begin
                 
     ALUcontrol: controlAlu
     Port map(ALUop => ALUop,
-            funcion => funcion,
-            operacion => operacion);
+            funcion => funcionLocal,
+            operacion => operacionLocal);
 end Behavioral;
