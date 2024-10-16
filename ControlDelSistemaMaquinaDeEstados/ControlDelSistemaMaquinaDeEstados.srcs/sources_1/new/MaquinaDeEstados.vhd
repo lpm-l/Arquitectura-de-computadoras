@@ -37,6 +37,7 @@ entity MaquinaDeEstados is
            edo_2 : out STD_LOGIC;
            edo_3 : out STD_LOGIC;
            edo_4 : out STD_LOGIC;
+           Aluop : out STD_LOGIC_VECTOR (1 downto 0);
            reset : in STD_LOGIC);
 end MaquinaDeEstados;
 
